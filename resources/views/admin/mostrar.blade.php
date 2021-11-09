@@ -7,7 +7,7 @@
     <title>Archivo</title>
 </head>
 <body>
-    <iframe style="width: 100vw; height: 100vh; borders:none"  src="/assets/{{$presentacion->file}}" title="{{$presentacion->descripcion}}"></iframe>
+    <iframe style="width: 100vw; height: 100vh; borders:none"  src="/files/archivos/{{$presentacion->file}}" title="{{$presentacion->descripcion}}"></iframe>
 
 </body>
 </html>

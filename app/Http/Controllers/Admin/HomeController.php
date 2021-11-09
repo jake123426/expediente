@@ -55,7 +55,9 @@ class HomeController extends Controller
 
         $file = $request->file;
         $filename = time() . '.' . $file->getClientOriginalExtension();
-        $request->file->move('assets', $filename);
+        $request->file->move('files/archivos/', $filename);
+
+        /* $url = Storage::put('files/archivos/', $request->file); */
 
         $presentacion = Presentation::create([
             'descripcion' => $request->descripcion,
@@ -84,6 +86,6 @@ class HomeController extends Controller
     public function download($file)
     {
 
-        return response()->download(public_path('assets/' . $file));
+        return response()->download(public_path('files/archivos/' . $file));
     }
 }

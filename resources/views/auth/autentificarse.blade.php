@@ -31,7 +31,7 @@
     <div class="contenedor" >
         <div class="content">
             <!--Image & Title-->
-            <img src="{{ Storage::url('login/justicia.jpg') }}" alt="No image">
+            <img src="{{ asset('files/img/justicia.jpg') }}" alt="No image">
             <div class="text">Introducir Credenciales</div>
             <!--Email & password input place-->
             <form action="{{ route('login') }}" method="POST">
